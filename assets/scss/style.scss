@@ -1,0 +1,17 @@
+@use "presets" as *;
+@use "common";
+
+@import 'header/header';
+@import 'header/header-menu';
+@import 'header/header-sidebar';
+
+body {
+  background-color: $color-primary;
+  color: $color-accent;
+}
+
+div {
+  width: $ul;
+  padding-left: $gap;
+  padding-right: $gap;
+}
