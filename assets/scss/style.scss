@@ -4,6 +4,8 @@
 @import 'header/header';
 @import 'header/header-menu';
 
+@import 'main/section-explore.scss';
+
 body {
   background-color: $color-primary;
   color: $color-accent;
