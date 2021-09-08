@@ -1,4 +1,9 @@
-.header-menu {
-    display: grid;
-    
-   }
+.nav-item {
+    padding-left: $gap;
+    padding-right: $gap;
+    font-size: 1.5em;
+}
+
+.dropdown-menu {
+    width: 100%;
+}

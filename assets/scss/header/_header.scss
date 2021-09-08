@@ -1,11 +1,4 @@
-.header
-{
-    display: grid;
-
-    background-color: $color-primary;
-    background-image: url(assets/img/abstract-yellow-gradient-background-vector.jpg);
-    background-position: 50% 50%;
+.header {
+    background-image: url(/assets/img/abstract-yellow-gradient-background-vector.jpg);
     background-size: cover;
-
-    align-content: center;
 }

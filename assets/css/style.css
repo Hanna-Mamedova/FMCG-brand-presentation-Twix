@@ -37,21 +37,18 @@ h4 {
 }
 
 .header {
-  display: grid;
-  background-color: orange;
-  background-image: url(assets/img/abstract-yellow-gradient-background-vector.jpg);
-  background-position: 50% 50%;
+  background-image: url(/assets/img/abstract-yellow-gradient-background-vector.jpg);
   background-size: cover;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
-.header-menu {
-  display: grid;
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5em;
 }
 
-.header-sidebar {
-  display: grid;
+.dropdown-menu {
+  width: 100%;
 }
 
 body {
