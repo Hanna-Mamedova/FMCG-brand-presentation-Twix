@@ -6,10 +6,13 @@
 
 @import 'main/section-explore.scss';
 
-body {
-  background-color: $color-primary;
-  color: $color-accent;
-}
+@font-face {
+  font-family: "GlowwormMN"; 
+  src: url("../fonts/Glowworm_MN_Compressed_.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
 
 div {
   width: $ul;

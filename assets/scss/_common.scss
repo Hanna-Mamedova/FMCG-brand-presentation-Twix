@@ -26,9 +26,11 @@ body {
     }
   }
   @media (min-width: 901px) {
+    a {
     &:hover,
     &:focus {
       color: red;
+    }
     }
   }
   @media (max-width: 600px) {
@@ -43,75 +45,63 @@ body {
   }
 }
 
-h1 {
-  color: white;
+// h1 {
+//   color: white;
 
-  @media (min-width: 901px) {
-    &:hover,
-    &:focus {
-      color: red;
-    }
-  }
+//   @media (min-width: 901px) {
+//     &:hover,
+//     &:focus {
+//       color: red;
+//     }
+//   }
 
-  @media (min-width: 601px) {
-    color: red;
-  }
+//   @media (min-width: 601px) {
+//     color: red;
+//   }
 
-  @media (max-width: 600px) {
-    color: red;
-  }
-}
+//   @media (max-width: 600px) {
+//     color: red;
+//   }
+// }
 
-h2 {
-  color: white;
+// h2 {
+//   color: white;
 
-  @media (min-width: 601px) {
-    color: red;
-  }
+//   @media (min-width: 601px) {
+//     color: red;
+//   }
 
-  @media (max-width: 600px) {
-    color: red;
-  }
-}
+//   @media (max-width: 600px) {
+//     color: red;
+//   }
+// }
 
-h3 {
-  color: white;
-  @media (min-width: 701px) {
-    &:hover,
-    &:focus {
-      color: red;
-    }
-  }
+// h3 {
+//   color: white;
+//   @media (min-width: 701px) {
+//     &:hover,
+//     &:focus {
+//       color: red;
+//     }
+//   }
 
-  @media (min-width: 901px) {
-    color: red;
-  }
+//   @media (min-width: 901px) {
+//     color: red;
+//   }
 
-  @media (max-width: 700px) {
-    color: red;
-  }
-}
+//   @media (max-width: 700px) {
+//     color: red;
+//   }
+// }
 
-h4 {
-  color: white;
+// h4 {
+//   color: white;
 
-  @media (min-width: 601px) {
-    color: red;
-  }
+//   @media (min-width: 601px) and (max-width: 800px) {
+//     color: green;
+//   }
 
-  @media (max-width: 800px) {
-    color: red;
-  }
-}
+//   @media (min-width: 701px) and (max-width: 900px) {
+//     color: red;
+//   }
 
-h4 {
-  color: white;
-
-  @media (min-width: 601px) and (max-width: 800px) {
-    color: green;
-  }
-
-  @media (min-width: 701px) and (max-width: 900px) {
-    color: red;
-  }
-}

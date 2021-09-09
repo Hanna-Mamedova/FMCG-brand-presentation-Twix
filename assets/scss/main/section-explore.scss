@@ -6,10 +6,24 @@
     background-size: cover;
 }
 
+.explore-content {
+    color: $color-white;
+    font-size: 1.2em;
+    margin-bottom: -$gap*0.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: $gap;
+}
+
 .explore-description {
     display: block;
     width: 100%;
-    color: white;
-    font-size: 3em;
+    color: $color-white;
     justify-content: center;
+
+    &__title {
+        font-family: "GlowwormMN";
+        font-size: 6em;
+        text-shadow: 1px 1px 2px black;
+    }
 }

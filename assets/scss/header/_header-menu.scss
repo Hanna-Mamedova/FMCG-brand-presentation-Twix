@@ -11,8 +11,13 @@
     padding-left: $gap;
     padding-right: $gap;
     font-size: 1.5em;
+    transition: 0.5s; 
 }
 
 .dropdown-menu {
     width: 100%;
+    :hover {
+        color: $color-accent;
+        transition: 0.5s; 
+    }
 }

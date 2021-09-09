@@ -12,26 +12,6 @@ body {
   background-color: orange;
 }
 
-h1 {
-  color: white;
-}
-
-h2 {
-  color: white;
-}
-
-h3 {
-  color: white;
-}
-
-h4 {
-  color: white;
-}
-
-h4 {
-  color: white;
-}
-
 .header {
   background-image: url(/assets/img/abstract-yellow-gradient-background-vector.jpg);
   background-size: cover;
@@ -50,10 +30,19 @@ h4 {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 1.5em;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .dropdown-menu {
   width: 100%;
+}
+.dropdown-menu :hover {
+  color: red;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .explore__container {
@@ -64,27 +53,40 @@ h4 {
   background-size: cover;
 }
 
+.explore-content {
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: -10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
 .explore-description {
   display: block;
   width: 100%;
   color: white;
-  font-size: 3em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-body {
-  background-color: orange;
-  color: red;
+.explore-description__title {
+  font-family: "GlowwormMN";
+  font-size: 6em;
+  text-shadow: 1px 1px 2px black;
 }
 
+@font-face {
+  font-family: "GlowwormMN";
+  src: url("../fonts/Glowworm_MN_Compressed_.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 div {
   width: 1280px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
 @media (min-width: 601px) {
   body a {
     text-decoration: none;
@@ -92,70 +94,17 @@ div {
   body a:hover, body a:focus {
     color: red;
   }
-  h1 {
-    color: red;
-  }
-  h2 {
-    color: red;
-  }
-  h4 {
-    color: red;
-  }
 }
-
-@media (min-width: 601px) and (max-width: 800px) {
-  h4 {
-    color: green;
-  }
-}
-
-@media (min-width: 701px) {
-  h3:hover, h3:focus {
-    color: red;
-  }
-}
-
-@media (min-width: 701px) and (max-width: 900px) {
-  h4 {
-    color: red;
-  }
-}
-
 @media (min-width: 901px) {
-  body:hover, body:focus {
-    color: red;
-  }
-  h1:hover, h1:focus {
-    color: red;
-  }
-  h3 {
+  body a:hover, body a:focus {
     color: red;
   }
 }
-
-@media (max-width: 800px) {
-  h4 {
-    color: red;
-  }
-}
-
-@media (max-width: 700px) {
-  h3 {
-    color: red;
-  }
-}
-
 @media (max-width: 600px) {
   body a {
     text-decoration: underline;
   }
   body a:hover, body a:focus {
-    color: red;
-  }
-  h1 {
-    color: red;
-  }
-  h2 {
     color: red;
   }
 }
