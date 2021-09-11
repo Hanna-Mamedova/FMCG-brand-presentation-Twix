@@ -1,3 +1,5 @@
+@use "presets" as *;
+
 body {
   position: relative;
   top: 0;
@@ -11,7 +13,7 @@ body {
   text-align: center;
 
 
-  background-color: orange;
+  background-color: $color-primary;
 
 
 
@@ -21,7 +23,7 @@ body {
 
       &:hover,
       &:focus {
-        color: red;
+        color: $color-accent;
       }
     }
   }
@@ -29,7 +31,7 @@ body {
     a {
     &:hover,
     &:focus {
-      color: red;
+      color: $color-accent;
     }
     }
   }
@@ -39,7 +41,7 @@ body {
 
       &:hover,
       &:focus {
-        color: red;
+        color: $color-accent;
       }
     }
   }
@@ -64,6 +66,12 @@ body {
 //   }
 // }
 
+h1 {
+  color: $color-white;
+  font-family: "GlowwormMN";
+  font-size: 6em;
+}
+
 // h2 {
 //   color: white;
 
@@ -75,6 +83,12 @@ body {
 //     color: red;
 //   }
 // }
+
+h2 {
+  color: $color-brown;
+  font-family: "GlowwormMN";
+  font-size: 4em;
+}
 
 // h3 {
 //   color: white;

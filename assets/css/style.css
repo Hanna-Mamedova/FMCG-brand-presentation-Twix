@@ -12,6 +12,18 @@ body {
   background-color: orange;
 }
 
+h1 {
+  color: white;
+  font-family: "GlowwormMN";
+  font-size: 6em;
+}
+
+h2 {
+  color: #490f00;
+  font-family: "GlowwormMN";
+  font-size: 4em;
+}
+
 .header {
   background-image: url(/assets/img/abstract-yellow-gradient-background-vector.jpg);
   background-size: cover;
@@ -47,7 +59,7 @@ body {
 
 .explore__container {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: 80vh;
   background-image: url(/assets/img/maxresdefault.jpg);
   background-size: cover;
@@ -65,15 +77,28 @@ body {
 .explore-description {
   display: block;
   width: 100%;
-  color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.explore-description__title {
-  font-family: "GlowwormMN";
-  font-size: 6em;
-  text-shadow: 1px 1px 2px black;
+
+.product__container {
+  max-width: 100%;
+}
+
+.product-title__container {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.product-description__container {
+  width: 100%;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
 }
 
 @font-face {
@@ -81,12 +106,9 @@ body {
   src: url("../fonts/Glowworm_MN_Compressed_.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+  text-shadow: 1px 1px 2px black;
 }
-div {
-  width: 1280px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 @media (min-width: 601px) {
   body a {
     text-decoration: none;
@@ -95,11 +117,13 @@ div {
     color: red;
   }
 }
+
 @media (min-width: 901px) {
   body a:hover, body a:focus {
     color: red;
   }
 }
+
 @media (max-width: 600px) {
   body a {
     text-decoration: underline;
