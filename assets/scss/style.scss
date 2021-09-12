@@ -6,11 +6,11 @@
 
 @import 'main/section-explore.scss';
 @import 'main/section-product.scss';
+@import 'main/section-story.scss';
 
 @font-face {
   font-family: "GlowwormMN"; 
   src: url("../fonts/Glowworm_MN_Compressed_.ttf") format("truetype"); 
   font-style: normal; 
   font-weight: normal;
-  text-shadow: 1px 1px 2px $color-black;
   } 

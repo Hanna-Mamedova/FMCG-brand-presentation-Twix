@@ -6,45 +6,21 @@ body {
   right: 0;
   left: 0.5;
 
-  display: flex;
-  display: block;
-
   content: "12345";
   text-align: center;
 
 
   background-color: $color-primary;
 
+}
 
+section {
+  display: block;
+  max-width: 100%;
+}
 
-  @media (min-width: 601px) {
-    a {
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        color: $color-accent;
-      }
-    }
-  }
-  @media (min-width: 901px) {
-    a {
-    &:hover,
-    &:focus {
-      color: $color-accent;
-    }
-    }
-  }
-  @media (max-width: 600px) {
-    a {
-      text-decoration: underline;
-
-      &:hover,
-      &:focus {
-        color: $color-accent;
-      }
-    }
-  }
+div {
+  max-width: 100%;
 }
 
 // h1 {
@@ -70,6 +46,7 @@ h1 {
   color: $color-white;
   font-family: "GlowwormMN";
   font-size: 6em;
+  text-shadow: 1px 1px 2px $color-black;
 }
 
 // h2 {
@@ -88,6 +65,26 @@ h2 {
   color: $color-brown;
   font-family: "GlowwormMN";
   font-size: 4em;
+}
+
+h4 {
+  font-family: "GlowwormMN";
+  font-size: 2em;
+  color: $color-brown;
+}
+
+h5 {
+  font-size: 1.2em;
+  margin-bottom: -$gap*0.5;
+  font-family: 'Poppins', sans-serif;
+  padding-top: $gap;
+  font-weight: bold;
+  color: $color-brown;
+}
+
+p {
+  font-size: 1.1rem;
+  color: $color-brown;
 }
 
 // h3 {

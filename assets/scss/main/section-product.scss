@@ -1,20 +1,25 @@
 .product__container {
-    max-width: 100%;
+    background-color: #f9f1db;
 }
 
 .product-title__container {
-    display: block;
-    width: 100%;
     padding-top: $gap;
 }
 
 .product-description__container {
-    width: 100%;
+    padding-top: $gap;
 }
 
 .card {
     background-color: transparent;
     border: none;
+    color: $color-brown;
+}
+
+.product-left__img,
+.product-right__img {
+    width: 500px;
+    height: 300px;
 }
 
 

@@ -1,0 +1,36 @@
+.story {
+    background-color: $color-white;
+
+    &__container {
+        background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
+        background-size: cover;
+        height: 30vh;
+    }
+}
+.story-subtitle {
+    color: $color-brown;
+    margin-bottom: $gap*0.5;
+}
+
+.story-info {
+    margin-top: 4*$gap;
+    margin-bottom: $gap;
+    color: $color-brown;
+    font-weight: bold;
+}
+
+.story-items {
+    margin-top: 2*$gap;
+}
+
+.story-item {
+    margin-bottom: $gap;
+}
+
+.story-text__content {
+    width: 60%;
+}
+
+
+
+
