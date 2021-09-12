@@ -114,11 +114,11 @@ p {
   bottom: 30px;
 }
 
-.product__container {
+.product-container {
   background-color: #f9f1db;
 }
 
-.product-title__container {
+.product-title {
   padding-top: 20px;
 }
 
@@ -126,12 +126,12 @@ p {
   padding-top: 20px;
 }
 
-.card {
+.product-left,
+.product-right {
   background-color: transparent;
   border: none;
   color: #490f00;
 }
-
 .product-left__img,
 .product-right__img {
   max-width: 500px;

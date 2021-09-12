@@ -1,8 +1,8 @@
-.product__container {
+.product-container {
     background-color: #f9f1db;
 }
 
-.product-title__container {
+.product-title {
     padding-top: $gap;
 }
 
@@ -10,17 +10,18 @@
     padding-top: $gap;
 }
 
-.card {
+.product-left,
+.product-right {
     background-color: transparent;
     border: none;
     color: $color-brown;
+
+    &__img {
+        max-width: 500px;
+        max-height: 300px;
+    }
 }
 
-.product-left__img,
-.product-right__img {
-    max-width: 500px;
-    max-height: 300px;
-}
 
 
 
