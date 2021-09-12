@@ -67,6 +67,13 @@ h2 {
   font-size: 4em;
 }
 
+h3 {
+  margin-top: 4*$gap;
+    margin-bottom: $gap;
+    color: $color-brown;
+    font-weight: bold;
+}
+
 h4 {
   font-family: "GlowwormMN";
   font-size: 2em;

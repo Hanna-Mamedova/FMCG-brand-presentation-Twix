@@ -1,22 +1,23 @@
 .story {
     background-color: $color-white;
+}
 
-    &__container {
+.story-title {
+    &__text {
+        color: $color-brown;
+        margin-bottom: $gap*0.5;
+    }
+
+    &__img {
         background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
         background-size: cover;
-        height: 30vh;
+        height: 40vh;
+        width: 100%;
     }
-}
-.story-subtitle {
-    color: $color-brown;
-    margin-bottom: $gap*0.5;
 }
 
 .story-info {
-    margin-top: 4*$gap;
-    margin-bottom: $gap;
-    color: $color-brown;
-    font-weight: bold;
+    margin-bottom: 2*$gap;
 }
 
 .story-items {
@@ -24,12 +25,27 @@
 }
 
 .story-item {
-    margin-bottom: $gap;
+    margin-bottom: 3*$gap;
+
+    &__text {
+        width: 60%;
+    }
+
+    &__image {
+        max-width: 500px;
+        max-height: 300px;
+        margin-left: 10%;
+    }
+
+    &__right {
+        margin-left: -5%;   
+    }
+
+    &__imagecontainer {
+        margin-left: -10%;   
+    }
 }
 
-.story-text__content {
-    width: 60%;
-}
 
 
 

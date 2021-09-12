@@ -30,6 +30,13 @@ h2 {
   font-size: 4em;
 }
 
+h3 {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  color: #490f00;
+  font-weight: bold;
+}
+
 h4 {
   font-family: "GlowwormMN";
   font-size: 2em;
@@ -127,29 +134,27 @@ p {
 
 .product-left__img,
 .product-right__img {
-  width: 500px;
-  height: 300px;
+  max-width: 500px;
+  max-height: 300px;
 }
 
 .story {
   background-color: white;
 }
-.story__container {
-  background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
-  background-size: cover;
-  height: 30vh;
-}
 
-.story-subtitle {
+.story-title__text {
   color: #490f00;
   margin-bottom: 10px;
 }
+.story-title__img {
+  background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
 
 .story-info {
-  margin-top: 80px;
-  margin-bottom: 20px;
-  color: #490f00;
-  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .story-items {
@@ -157,11 +162,21 @@ p {
 }
 
 .story-item {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
-
-.story-text__content {
+.story-item__text {
   width: 60%;
+}
+.story-item__image {
+  max-width: 500px;
+  max-height: 300px;
+  margin-left: 10%;
+}
+.story-item__right {
+  margin-left: -5%;
+}
+.story-item__imagecontainer {
+  margin-left: -10%;
 }
 
 @font-face {
