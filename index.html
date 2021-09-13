@@ -15,13 +15,19 @@
 
 </head>
 
+<!-- Нужно:
+1. Якоря на меню
+2. Секция voting
+3. Футер
+4. проверить на другие размеры экрана-->
+
 <body>
   <header class="header" style="background-image: url(assets/img/abstract-yellow-gradient-background-vector.jpg);">
     <div class="header-menu">
       <nav class="navbar navbar-expand-lg navbar-light">
 
         <span class="header-logo">
-          <img src="/assets/img/Twix_Logo.png" alt="twix">
+          <img src="assets/img/Twix_Logo.png" alt="twix">
         </span>
 
         <div class="collapse navbar-collapse justify-content-center font-weight-bold" id="navbarNavDropdown">
@@ -55,7 +61,7 @@
   <main>
     <section class="explore">
 
-      <div class="explore__container" style="background-image: url(/assets/img/maxresdefault.jpg);">
+      <div class="explore__container" style="background-image: url(assets/img/maxresdefault.jpg);">
         <h5 class="explore-subtitle">EXPLORE</h5>
         <div class="explore-description">
           <h1 class="explore-description__title">LEFT TWIX<span class="trademark">®</span> OR <br> RIGHT TWIX<span
@@ -103,14 +109,32 @@
       </div>
     </section>
 
-    <section></section>
+    <section class="voting">
+      
+      <div class="voting__container">
+        <h5 class="voting-content__subtitle">PICK A SIDE</h5>
+      <h2 class="voting-content__title"> 
+        Explore TWIX®. Twice.
+      </h2>
+      <h3 class="voting-content__text">
+            Do you lean to the Left TWIX® or run to the Right TWIX®? Time to decide once and for all.
+      </h3>
+        
+        <svg width="126" height="15" viewBox="0 0 126 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M100.504 12.5416L88.0016 0L75.5021 12.5416L63.0014 0L50.5002 12.5416L38.0013 0L25.5001 12.5416L12.9995 0L0.5 12.5416L0.5 15H125.5V12.5416L113.001 0L100.504 12.5416Z"
+            fill="#490f00"></path>
+        </svg>
+        
+        </div>
+    </section>
 
     <section class="story">
       <div class="story-title mx-auto">
         <h5 class="story-title__text">ABOUT US</h5>
         <h2 class="story-title__subtitle">The Tale Of Seamus And Earl</h2>
       </div>
-      <div class="story-title__img" style="background-image: url(/assets/img/Birth_of_a_phenomenon_16x9\ large.jpg);">
+      <div class="story-title__img" style="background-image: url(assets/img/Birth_of_a_phenomenon_16x9\ large.jpg);">
       </div>
 
       <h3 class="story-info">A story of passion, craftsmanship and feuds, the history of TWIX® is riven with drama.</h3>
@@ -126,7 +150,7 @@
         <div class="story-item row">
           <div class="col-sm-6">
             <img class="story-item__image img-fluid float-right img-thumbnail"
-              src="/assets/img/Birth_of_a_phenomenon_16x9 large.jpg" alt="img">
+              src="assets/img/Birth_of_a_phenomenon_16x9 large.jpg" alt="img">
           </div>
           <div class="story-item__right col-sm-6">
             <h4>BIRTH OF A PHENOMENON</h4>
@@ -154,7 +178,7 @@
         <div class="story-item row">
           <div class="col-sm-6">
             <img class="story-item__image img-fluid float-right img-thumbnail"
-              src="/assets/img/Twix-About-Schism-of-the-Century-16x9.jpg" alt="img">
+              src="assets/img/Twix-About-Schism-of-the-Century-16x9.jpg" alt="img">
           </div>
           <div class="story-item__right col-sm-6">
             <h4>SCHISM OF THE CENTURY</h4>
@@ -181,7 +205,7 @@
         <div class="story-item row">
           <div class="col-sm-6">
             <img class="story-item__image img-fluid float-right img-thumbnail"
-              src="/assets/img/Drive_for_perfection_16x9.jpg" alt="img">
+              src="assets/img/Drive_for_perfection_16x9.jpg" alt="img">
           </div>
           <div class="story-item__right col-sm-6">
             <h4>A DRIVE FOR PERFECTION</h4>
@@ -202,14 +226,103 @@
               src="assets/img/Twix_Bar_16x9.jpg" alt="img">
           </div>
         </div>
-
     </section>
 
-    <section></section>
-    <section></section>
+    <section class="contacts">
+      <div class="contacts__container">
+      <h2 class="contacts-content__title"> 
+        Contacts
+      </h2>
+      <h3 class="contacts-content__text">
+        From our ingredients to our ethics, we love to answer your questions about TWIX®.
+      </h3>
+        
+        <svg width="126" height="15" viewBox="0 0 126 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M100.504 12.5416L88.0016 0L75.5021 12.5416L63.0014 0L50.5002 12.5416L38.0013 0L25.5001 12.5416L12.9995 0L0.5 12.5416L0.5 15H125.5V12.5416L113.001 0L100.504 12.5416Z"
+            fill="#490f00"></path>
+        </svg>
+
+        
+
+        <form class="contacts-form needs-validation mx-auto">
+
+          <p class="contacts-form__title">CONTACT US</p>
+
+          <div class="form-group">
+            <label for="reasons">Select your reason for contact*</label>
+            <select class="custom-select" id="reasons" required>
+              <option value="">Reason for contact...</option>
+              <option value="1">Advertising/Promotion</option>
+              <option value="2">Coupons and Samples</option>
+              <option value="3">General Questions</option>
+              <option value="3">Ideas/Suggestions</option>
+            </select>
+            <div class="invalid-feedback">*required</div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationServer01">First name*</label>
+              <input type="text" class="form-control" id="validationServer01" value="" required>
+              <div class="invalid-feedback">
+                *required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="validationServer02">Last name*</label>
+              <input type="text" class="form-control" id="validationServer02" value="" required>
+              <div class="invalid-feedback">
+                *required
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address*</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <div class="invalid-feedback">
+              *required
+            </div>
+          </div>
+
+          <div class="form-group has-validation">
+            <label for="subject">Subject*</label>
+            <input type="text" class="form-control" id="subject" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="validationTextarea">Description*</label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Please enter a message..." required></textarea>
+            <div class="invalid-feedback">
+              Please enter a message in the textarea.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+              <label class="form-check-label" for="invalidCheck3">
+                Agree to terms and conditions
+              </label>
+              <div  id="invalidCheck3Feedback" class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+
+        </form>
+
+
+
+
+    </section>
   </main>
-
-
+  
   <footer></footer>
 
 

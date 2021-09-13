@@ -1,5 +1,6 @@
 .product-container {
-    background-color: #f9f1db;
+    background-color: $color-light;
+    padding-bottom: 2*$gap;
 }
 
 .product-title {
@@ -19,6 +20,11 @@
     &__img {
         max-width: 500px;
         max-height: 300px;
+
+        &:hover {
+            transition: transform .5s;
+            transform: scale(1.05);
+        }
     }
 }
 

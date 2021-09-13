@@ -5,7 +5,7 @@ body {
   left: 0.5;
   content: "12345";
   text-align: center;
-  background-color: orange;
+  background-color: white;
 }
 
 section {
@@ -116,6 +116,7 @@ p {
 
 .product-container {
   background-color: #f9f1db;
+  padding-bottom: 40px;
 }
 
 .product-title {
@@ -136,6 +137,22 @@ p {
 .product-right__img {
   max-width: 500px;
   max-height: 300px;
+}
+.product-left__img:hover,
+.product-right__img:hover {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.voting-content__subtitle, .voting-content__title {
+  color: white;
+  margin-bottom: 20px;
 }
 
 .story {
@@ -177,6 +194,24 @@ p {
 }
 .story-item__imagecontainer {
   margin-left: -10%;
+}
+
+.contacts__container {
+  background-color: #f9f1db;
+}
+
+.contacts-content__title {
+  padding-top: 20px;
+}
+
+.contacts-form {
+  width: 50%;
+}
+.contacts-form__title {
+  margin-top: 40px;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 @font-face {

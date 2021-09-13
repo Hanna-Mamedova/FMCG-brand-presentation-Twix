@@ -1,0 +1,18 @@
+.contacts__container {
+    background-color: $color-light;
+}
+
+.contacts-content__title {
+    padding-top: $gap;
+}
+
+.contacts-form {
+    width: 50%;
+
+    &__title {
+        margin-top: 2*$gap;
+        color: $color-accent;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
