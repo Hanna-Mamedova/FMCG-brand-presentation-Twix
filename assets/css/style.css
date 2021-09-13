@@ -182,7 +182,7 @@ p {
   margin-bottom: 60px;
 }
 .story-item__text {
-  width: 60%;
+  width: 70%;
 }
 .story-item__image {
   max-width: 500px;
@@ -191,6 +191,9 @@ p {
 }
 .story-item__right {
   margin-left: -5%;
+}
+.story-item__left {
+  padding-left: 25%;
 }
 .story-item__imagecontainer {
   margin-left: -10%;

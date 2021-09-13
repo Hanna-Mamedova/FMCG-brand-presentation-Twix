@@ -28,7 +28,7 @@
     margin-bottom: 3*$gap;
 
     &__text {
-        width: 60%;
+        width: 70%;
     }
 
     &__image {
@@ -39,6 +39,10 @@
 
     &__right {
         margin-left: -5%;   
+    }
+
+    &__left {
+        padding-left: 25%;
     }
 
     &__imagecontainer {
