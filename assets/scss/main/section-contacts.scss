@@ -1,5 +1,6 @@
 .contacts__container {
     background-color: $color-light;
+    padding-bottom: 2*$gap;
 }
 
 .contacts-content__title {
@@ -14,5 +15,14 @@
         color: $color-accent;
         font-size: 2rem;
         font-weight: bold;
+    }
+
+    &__container {
+        padding: $gap;
+        background-color: rgba(252, 178, 67, 0.918);
+    }
+    &__btn {
+        background-color: $color-brown;
+        border: none;
     }
 }

@@ -201,6 +201,7 @@ p {
 
 .contacts__container {
   background-color: #f9f1db;
+  padding-bottom: 40px;
 }
 
 .contacts-content__title {
@@ -215,6 +216,83 @@ p {
   color: red;
   font-size: 2rem;
   font-weight: bold;
+}
+.contacts-form__container {
+  padding: 20px;
+  background-color: rgba(252, 178, 67, 0.918);
+}
+.contacts-form__btn {
+  background-color: #490f00;
+  border: none;
+}
+
+.footer {
+  background-color: red;
+  width: 100%;
+}
+
+.footer-content {
+  padding-top: 20px;
+}
+.footer-content__title {
+  margin-bottom: -6px;
+  color: white;
+  font-weight: bold;
+}
+.footer-content__icons {
+  position: relative;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+}
+.footer-content__icons a {
+  display: block;
+  padding: 10px;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  color: white;
+}
+.footer-content__icons a:hover {
+  color: orange;
+}
+.footer-content__icons i {
+  font-size: 2.25em;
+}
+.footer-content__text {
+  margin-bottom: 20px;
+}
+.footer-content__text p {
+  color: white;
+}
+.footer-content::after {
+  width: 80%;
+  height: 1px;
+  content: "";
+  background-color: white;
+  margin-left: 10%;
+}
+
+.footer-links__item {
+  text-align: left;
+  margin-right: 100px;
+}
+.footer-links__item li {
+  list-style-type: none;
+}
+.footer-links__item a {
+  color: white;
+  font-weight: bold;
+}
+
+.footer-title {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 0;
+  padding: 20px;
 }
 
 @font-face {

@@ -4,11 +4,13 @@
 @import 'header/header';
 @import 'header/header-menu';
 
-@import 'main/section-explore.scss';
-@import 'main/section-product.scss';
-@import 'main/section-voting.scss';
-@import 'main/section-story.scss';
-@import 'main/section-contacts.scss';
+@import 'main/section-explore';
+@import 'main/section-product';
+@import 'main/section-voting';
+@import 'main/section-story';
+@import 'main/section-contacts';
+
+@import 'footer/footer';
 
 @font-face {
   font-family: "GlowwormMN"; 

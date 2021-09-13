@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -16,10 +17,10 @@
 </head>
 
 <!-- Нужно:
-1. Якоря на меню
-2. Секция voting
-3. Футер
-4. проверить на другие размеры экрана-->
+1. Секция voting
+2. Футер
+3. проверить на другие размеры экрана
+4. normalizer-->
 
 <body>
   <header class="header" style="background-image: url(assets/img/abstract-yellow-gradient-background-vector.jpg);">
@@ -39,18 +40,18 @@
                 Our Chocolate
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item font-weight-bold" href="#product-left">Left twix®</a>
-                <a class="dropdown-item font-weight-bold" href="#product-right">Right twix®</a>
+                <a class="dropdown-item font-weight-bold" href="#product">Left twix®</a>
+                <a class="dropdown-item font-weight-bold" href="#product">Right twix®</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pick A Side <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#voting">Pick A Side <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Story</a>
+              <a class="nav-link" href="#story">Our Story</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
@@ -72,7 +73,7 @@
     </section>
 
     <section class="product">
-      <div class="product-container">
+      <div class="product-container" id="product">
 
         <h2 class="product-title">OUR PRODUCTS</h2>
 
@@ -87,7 +88,7 @@
             <img class="product-left__img card-img-top mx-auto" src="assets/img/Twix-Left-16x9.jpg"
               alt="Left twix product">
             <div class="product-left__content card-body mx-auto" style="width: 50%;">
-              <h5 class="product-left__title card-title" id="product-left">LEFT TWIX® PRODUCTS</h5>
+              <h5 class="product-left__title card-title">LEFT TWIX® PRODUCTS</h5>
               <p class="product-left__about card-text">Created with smooth caramel on crunchy cookie, enveloped in
                 creamy chocolate, Left TWIX® is in no way the
                 same as Right TWIX®</p>
@@ -98,7 +99,7 @@
             <img class="product-right__img card-img-top mx-auto" src="assets/img/Twix-Right-16x9.jpg"
               alt="Right twix product">
             <div class="product-right__content card-body mx-auto" style="width: 50%;">
-              <h5 class="product-right__title card-title" id="product-right">RIGHT TWIX® PRODUCTS</h5>
+              <h5 class="product-right__title card-title">RIGHT TWIX® PRODUCTS</h5>
               <p class="product-right__about card-text text-center">Made in a way that is completely different from Left
                 TWIX®, Right TWIX® features chewy caramel on crisp
                 cookie, cloaked in velvety chocolate.</p>
@@ -111,7 +112,7 @@
 
     <section class="voting">
 
-      <div class="voting__container">
+      <div class="voting__container" id="voting">
         <h5 class="voting-content__subtitle">PICK A SIDE</h5>
         <h2 class="voting-content__title">
           Explore TWIX®. Twice.
@@ -130,7 +131,7 @@
     </section>
 
     <section class="story">
-      <div class="story-title mx-auto">
+      <div class="story-title mx-auto" id="story">
         <h5 class="story-title__text">ABOUT US</h5>
         <h2 class="story-title__subtitle">The Tale Of Seamus And Earl</h2>
       </div>
@@ -236,7 +237,7 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__container">
+      <div class="contacts__container" id="contacts">
         <h2 class="contacts-content__title">
           Contacts
         </h2>
@@ -250,89 +251,139 @@
             fill="#490f00"></path>
         </svg>
 
-
-
         <form class="contacts-form needs-validation mx-auto">
 
           <p class="contacts-form__title">CONTACT US</p>
 
-          <div class="form-group">
-            <label for="reasons">Select your reason for contact*</label>
-            <select class="custom-select" id="reasons" required>
-              <option value="">Reason for contact...</option>
-              <option value="1">Advertising/Promotion</option>
-              <option value="2">Coupons and Samples</option>
-              <option value="3">General Questions</option>
-              <option value="3">Ideas/Suggestions</option>
-            </select>
-            <div class="invalid-feedback">*required</div>
-          </div>
+          <div class="contacts-form__container border border-danger">
+            <div class="form-group">
+              <label for="reasons">Select your reason for contact*</label>
+              <select class="custom-select" id="reasons" required>
+                <option value="">Reason for contact...</option>
+                <option value="1">Advertising/Promotion</option>
+                <option value="2">Coupons and Samples</option>
+                <option value="3">General Questions</option>
+                <option value="3">Ideas/Suggestions</option>
+              </select>
+              <div class="invalid-feedback">*required</div>
+            </div>
 
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="validationServer01">First name*</label>
-              <input type="text" class="form-control" id="validationServer01" value="" required>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationServer01">First name*</label>
+                <input type="text" class="form-control" id="validationServer01" value="" required>
+                <div class="invalid-feedback">
+                  *required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationServer02">Last name*</label>
+                <input type="text" class="form-control" id="validationServer02" value="" required>
+                <div class="invalid-feedback">
+                  *required
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address*</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
               <div class="invalid-feedback">
                 *required
               </div>
             </div>
-            <div class="col-md-6 mb-3">
-              <label for="validationServer02">Last name*</label>
-              <input type="text" class="form-control" id="validationServer02" value="" required>
+
+            <div class="form-group has-validation">
+              <label for="subject">Subject*</label>
+              <input type="text" class="form-control" id="subject" required>
               <div class="invalid-feedback">
-                *required
+                Please choose a username.
               </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address*</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            <div class="invalid-feedback">
-              *required
-            </div>
-          </div>
-
-          <div class="form-group has-validation">
-            <label for="subject">Subject*</label>
-            <input type="text" class="form-control" id="subject" required>
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-          </div>
-
-          <div class="mb-3">
-            <label for="validationTextarea">Description*</label>
-            <textarea class="form-control" id="validationTextarea" placeholder="Please enter a message..."
-              required></textarea>
-            <div class="invalid-feedback">
-              Please enter a message in the textarea.
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
-                aria-describedby="invalidCheck3Feedback" required>
-              <label class="form-check-label" for="invalidCheck3">
-                Agree to terms and conditions
-              </label>
-              <div id="invalidCheck3Feedback" class="invalid-feedback">
-                You must agree before submitting.
+            <div class="mb-3">
+              <label for="validationTextarea">Description*</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Please enter a message..."
+                required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
               </div>
             </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                  aria-describedby="invalidCheck3Feedback" required>
+                <label class="form-check-label" for="invalidCheck3">
+                  Agree to terms and conditions
+                </label>
+                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="contacts-form__btn btn btn-danger" type="submit">Submit</button>
           </div>
-          <button class="btn btn-primary" type="submit">Submit</button>
 
         </form>
-
-
-
-
     </section>
   </main>
 
-  <footer></footer>
+  <footer>
+    <div class="footer">
+
+      <div class="footer-content row">
+        <div class="col-sm-4">
+          <div class="footer-content__container">
+            <p class="footer-content__title">FOLOW US ON</p>
+
+            <div class="footer-content__icons">
+              <a href="#"><i class="fa fa-facebook-official"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter-square"></i></a>
+              <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content__text col-sm-8 text-left">
+
+          <p>This is a marketing site</p>
+
+          <p>This is a marketing site This site includes information, games, advertisements and promotional offers
+            featuring our products. Children should get a parent’s permission before visiting any website or giving
+            personal information. You must be 18 or older to shop online.</p>
+
+          <p>® TM Trademarks © Mars, Incorporated 2021. Other trademarks are property of their respective owners.</p>
+        </div>
+
+        <div class="footer-links row mx-auto">
+
+          <ul class="footer-links__item">
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Note to Parents</a></li>
+            <li><a href="#">Cookie Notice</a></li>
+          </ul>
+          <ul class="footer-links__item">
+            <li><a href="#">Supply Chain Transparency</a></li>
+            <li><a href="#">Ad Choice</a></li>
+            <li><a href="#">Cookie Settings</a></li>
+          </ul>
+          <ul class="footer-links__item">
+            <li><a href="#">Modern Slavery Act</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+      <h2 class="footer-title">
+        LOVE TWIX®? Check out more brands from Mars Wrigley.
+      </h2>
+
+    </div>
+  </footer>
 
 
 
