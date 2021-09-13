@@ -1,7 +1,32 @@
+.voting {
+    background-color: red;
+    background-image: url(assets/img/396000082_Twix_Header_ExploreTwix\ v2.jpg);
+    background-size: cover;
+    padding-bottom: $gap*2;
+}
+
 .voting-content {
     &__subtitle,
-    &__title {
-    color: $color-white;
-    margin-bottom: $gap;
+    &__title,
+    &__text {
+        color: $color-white;
+    }
 }
+
+.voiting-progress {
+    width: 40%;
+    margin-top: 2*$gap;
+
+    p {
+        color: $color-white;
+    }
+
+    &__scale {
+        padding: 0;
+    }
+}
+
+.voiting-ending {
+    margin-top: $gap;
+    color: $color-white;
 }
