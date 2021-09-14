@@ -61,6 +61,7 @@ h2 {
 h3 {
   color: $color-brown;
   font-weight: bold;
+  width: 70%;
   
   @include lg-min {
       margin-top: 4*$gap;

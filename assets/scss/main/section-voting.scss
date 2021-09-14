@@ -23,6 +23,10 @@
 
     &__scale {
         padding: 0;
+
+        @include sm {
+            margin-bottom: $gap;
+        }
     }
 }
 
