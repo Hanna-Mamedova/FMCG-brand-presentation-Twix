@@ -1,4 +1,64 @@
+@import "mixins";
+
 .header {
+    display: grid;
+
+    background-color: $color-primary;
     background-image: url(/assets/img/abstract-yellow-gradient-background-vector.jpg);
     background-size: cover;
+
+    align-content: center;
+}
+
+.header-menu {
+    @extend %container;
+}
+
+.header-logo {
+    margin-right: 2*$gap;
+
+    &__img {
+        @include lg-md {
+            width: 70%;
+        }
+
+        @include md {
+            width: 50%;
+        }
+    }
+}
+
+.nav-item {
+    transition: 0.5s;
+    
+    @include xl-min {
+    padding-left: $gap;
+    padding-right: $gap;
+    font-size: 1.5rem;
+    }
+
+    @include xl-lg {
+        padding-left: 0.7*$gap;
+        padding-right: 0.7*$gap;
+        font-size: 1.3rem;
+        }
+
+    @include lg-md {
+        padding-left: 0.4*$gap;
+        padding-right: 0.4*$gap;
+        font-size: 1.2rem;
+    }
+
+    @include md-sm {
+        padding-left: 0.3*$gap;
+        padding-right: 0.3*$gap;
+        font-size: 0.6rem;
+    }
+}
+
+.dropdown-menu {
+    :hover {
+        color: $color-accent;
+        transition: 0.5s; 
+    }
 }
