@@ -1,7 +1,10 @@
+@import "mixins";
+
 .explore__container {
     height: 85vh;
     background-image: url(/assets/img/maxresdefault.jpg);
     background-size: cover;
+    background-position:center;
 }
 
 .explore-subtitle {
@@ -10,12 +13,26 @@
 
 .explore-description {
     display: block;
-    width: 100%;
     justify-content: center;
 }
 
 .trademark {
-    font-size: 0.6em;
     position: relative;
-    bottom: 1.5*$gap;
+
+    @include lg-min {
+        font-size: 3.5rem;
+        bottom: 1.5*$gap;
+
+    }
+    
+    @include lg-md {
+        font-size: 2rem;
+        bottom: 1.5*$gap;
+
+    }
+
+    @include sm {
+        font-size: 1.5rem;
+        bottom: 0.8*$gap;
+    }   
 }
