@@ -56,6 +56,20 @@
 
         text-align: left;
         margin-right: 5*$gap;
+
+        @include lg-md {
+            font-size: 0.9rem;
+            margin-right: 4*$gap;
+        }
+
+        @include md-sm {
+            font-size: 0.7rem;
+            margin-right: 3*$gap;
+        }
+
+        @include sm {
+            font-size: 0.7rem;
+        }
         
         li {
             list-style-type: none;

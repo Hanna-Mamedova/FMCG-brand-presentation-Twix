@@ -1,3 +1,5 @@
+@import "mixins";
+
 .story {
     background-color: $color-white;
 }
@@ -21,31 +23,83 @@
 
 .story-items {
     margin-top: 2*$gap;
+
+    @extend %container;
 }
 
+
 .story-item {
-    margin-bottom: 3*$gap;
+    @include sm-min {
+        margin-bottom: 3*$gap;
+    }
+    @include sm {
+        margin-bottom: $gap;
+    }
 
     &__text {
-        width: 70%;
+        @include xl-min {
+            width: 70%;
+        }
+
+        @include xl-lg {
+            width: 85%;
+        }
+        @include lg {
+            width: 95%;
+        }
     }
 
     &__image {
-        max-width: 500px;
-        max-height: 300px;
-        margin-left: 10%;
+        @include xl-min {
+            margin-left: 10%;
+            }
+
+        @include xl-lg {
+        margin-left: 20%;
+        }
+
+        @include lg-md {
+            max-width: 400px;
+            max-height: 200px;
+            margin-left: 10%;
+        }
+
+        @include md-sm {
+            max-width: 250px;
+            max-height: 150px;
+            margin-left: 10%;
+        }
+
+        @include sm {
+            margin-bottom: $gap;
+        }
     }
 
     &__right {
-        margin-left: -5%;   
+        @include lg-min {
+            margin-left: -5%;
+        }
+
+        @include md-sm {
+            margin-left: -2%;
+        }   
     }
 
     &__left {
-        padding-left: 25%;
+
+        @include md-sm {
+            padding-left: 0;
+            margin-right: 10px;
+        }
+        @include sm {
+            padding-left: 0;
+        }
     }
 
     &__imagecontainer {
-        margin-left: -10%;   
+        @include sm-min {
+            margin-left: -10%;
+        }   
     }
 }
 

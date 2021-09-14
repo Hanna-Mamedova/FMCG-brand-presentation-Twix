@@ -49,7 +49,7 @@ h5 {
   color: #490f00;
 }
 
-.header-menu {
+.header-menu, .story-items {
   max-width: 1340px;
   margin: auto;
   padding-right: 20px;
@@ -179,6 +179,12 @@ h5 {
   color: white;
 }
 
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
 .story {
   background-color: white;
 }
@@ -199,27 +205,6 @@ h5 {
 
 .story-items {
   margin-top: 40px;
-}
-
-.story-item {
-  margin-bottom: 60px;
-}
-.story-item__text {
-  width: 70%;
-}
-.story-item__image {
-  max-width: 500px;
-  max-height: 300px;
-  margin-left: 10%;
-}
-.story-item__right {
-  margin-left: -5%;
-}
-.story-item__left {
-  padding-left: 25%;
-}
-.story-item__imagecontainer {
-  margin-left: -10%;
 }
 
 .contacts__container {
@@ -325,6 +310,15 @@ h5 {
   font-weight: normal;
 }
 
+@media (min-width: 576px) {
+  .story-item {
+    margin-bottom: 60px;
+  }
+  .story-item__imagecontainer {
+    margin-left: -10%;
+  }
+}
+
 @media (min-width: 768px) {
   h4 {
     font-size: 2rem;
@@ -355,6 +349,9 @@ h5 {
     font-size: 3.5rem;
     bottom: 30px;
   }
+  .story-item__right {
+    margin-left: -5%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -363,6 +360,12 @@ h5 {
     padding-right: 20px;
     font-size: 1.5rem;
   }
+  .story-item__text {
+    width: 70%;
+  }
+  .story-item__image {
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 1199.8px) and (min-width: 992px) {
@@ -370,6 +373,18 @@ h5 {
     padding-left: 14px;
     padding-right: 14px;
     font-size: 1.3rem;
+  }
+  .story-item__text {
+    width: 85%;
+  }
+  .story-item__image {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 991.8px) {
+  .story-item__text {
+    width: 95%;
   }
 }
 
@@ -401,6 +416,15 @@ h5 {
   .trademark {
     font-size: 2rem;
     bottom: 30px;
+  }
+  .story-item__image {
+    max-width: 400px;
+    max-height: 200px;
+    margin-left: 10%;
+  }
+  .footer-links__item {
+    font-size: 0.9rem;
+    margin-right: 80px;
   }
 }
 
@@ -438,6 +462,22 @@ h5 {
     padding-right: 6px;
     font-size: 0.6rem;
   }
+  .story-item__image {
+    max-width: 250px;
+    max-height: 150px;
+    margin-left: 10%;
+  }
+  .story-item__right {
+    margin-left: -2%;
+  }
+  .story-item__left {
+    padding-left: 0;
+    margin-right: 10px;
+  }
+  .footer-links__item {
+    font-size: 0.7rem;
+    margin-right: 60px;
+  }
 }
 
 @media (max-width: 575.8px) {
@@ -452,5 +492,17 @@ h5 {
   }
   .voiting-progress__scale {
     margin-bottom: 20px;
+  }
+  .story-item {
+    margin-bottom: 20px;
+  }
+  .story-item__image {
+    margin-bottom: 20px;
+  }
+  .story-item__left {
+    padding-left: 0;
+  }
+  .footer-links__item {
+    font-size: 0.7rem;
   }
 }
