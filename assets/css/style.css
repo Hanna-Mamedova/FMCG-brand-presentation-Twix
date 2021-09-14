@@ -1,3 +1,14 @@
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   position: relative;
   top: 0;
@@ -6,54 +17,34 @@ body {
   content: "12345";
   text-align: center;
   background-color: white;
-}
-
-section {
-  display: block;
-  max-width: 100%;
-}
-
-div {
-  max-width: 100%;
+  font-size: 16px;
+  color: #490f00;
 }
 
 h1 {
   color: white;
   font-family: "GlowwormMN";
-  font-size: 6em;
   text-shadow: 1px 1px 2px black;
 }
 
 h2 {
   color: #490f00;
   font-family: "GlowwormMN";
-  font-size: 4em;
 }
 
 h3 {
-  margin-top: 80px;
-  margin-bottom: 20px;
   color: #490f00;
   font-weight: bold;
 }
 
 h4 {
   font-family: "GlowwormMN";
-  font-size: 2em;
   color: #490f00;
 }
 
 h5 {
-  font-size: 1.2em;
-  margin-bottom: -10px;
   font-family: "Poppins", sans-serif;
-  padding-top: 20px;
   font-weight: bold;
-  color: #490f00;
-}
-
-p {
-  font-size: 1.1rem;
   color: #490f00;
 }
 
@@ -322,4 +313,87 @@ p {
   src: url("../fonts/Glowworm_MN_Compressed_.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  h5 {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    margin-bottom: -10px;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  h5 {
+    padding-top: 20px;
+    font-size: 1rem;
+    margin-bottom: -4px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    padding-top: 14px;
+    font-size: 0.8rem;
+    margin-bottom: -2px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 14px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.8px) {
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+  }
 }
