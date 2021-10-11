@@ -2,108 +2,102 @@
 
 .story {
     background-color: $color-white;
-}
 
-.story-title {
-    &__text {
-        color: $color-brown;
-        margin-bottom: $gap*0.5;
-    }
-
-    &__img {
-        background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
-        background-size: cover;
-        height: 200px;
-    }
-}
-
-.story-info {
-    margin-bottom: 2*$gap;
-}
-
-.story-items {
-    margin-top: 2*$gap;
-
-    @extend %container;
-}
-
-
-.story-item {
-    @include sm-min {
-        margin-bottom: 3*$gap;
-    }
-    @include sm {
-        margin-bottom: $gap;
-    }
-
-    &__text {
-        @include xl-min {
-            width: 70%;
+    &-title {
+        &__text {
+            color: $color-brown;
+            margin-bottom: $gap*0.5;
         }
-
-        @include xl-lg {
-            width: 85%;
-        }
-        @include lg {
-            width: 95%;
+    
+        &__img {
+            background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
+            background-size: cover;
+            height: 200px;
         }
     }
 
-    &__image {
-        @include xl-min {
-            margin-left: 10%;
-            }
+    &-info {
+        margin-bottom: 2*$gap;
+    }
 
-        @include xl-lg {
-        margin-left: 20%;
+    &-items {
+        margin-top: 2*$gap;
+    
+        @extend %container;
+    }
+
+    &-item {
+        @include sm-min {
+            margin-bottom: 3*$gap;
         }
-
-        @include lg-md {
-            max-width: 400px;
-            max-height: 200px;
-            margin-left: 10%;
-        }
-
-        @include md-sm {
-            max-width: 250px;
-            max-height: 150px;
-            margin-left: 10%;
-        }
-
         @include sm {
             margin-bottom: $gap;
         }
-    }
-
-    &__right {
-        @include lg-min {
-            margin-left: -5%;
+    
+        &__text {
+            @include xl-min {
+                width: 70%;
+            }
+    
+            @include xl-lg {
+                width: 85%;
+            }
+            @include lg {
+                width: 95%;
+            }
         }
-
-        @include md-sm {
-            margin-left: -2%;
-        }   
-    }
-
-    &__left {
-
-        @include md-sm {
-            padding-left: 0;
-            margin-right: 10px;
+    
+        &__image {
+            @include xl-min {
+                margin-left: 10%;
+                }
+    
+            @include xl-lg {
+            margin-left: 20%;
+            }
+    
+            @include lg-md {
+                max-width: 400px;
+                max-height: 200px;
+                margin-left: 10%;
+            }
+    
+            @include md-sm {
+                max-width: 250px;
+                max-height: 150px;
+                margin-left: 10%;
+            }
+    
+            @include sm {
+                margin-bottom: $gap;
+            }
         }
-        @include sm {
-            padding-left: 0;
+    
+        &__right {
+            @include lg-min {
+                margin-left: -5%;
+            }
+    
+            @include md-sm {
+                margin-left: -2%;
+            }   
         }
-    }
-
-    &__imagecontainer {
-        @include sm-min {
-            margin-left: -10%;
-        }   
+    
+        &__left {
+    
+            @include md-sm {
+                padding-left: 0;
+                margin-right: 10px;
+            }
+            @include sm {
+                padding-left: 0;
+            }
+        }
+    
+        &__imagecontainer {
+            @include sm-min {
+                margin-left: -10%;
+            }   
+        }
     }
 }
-
-
-
-
-

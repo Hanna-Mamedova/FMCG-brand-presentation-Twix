@@ -1,25 +1,27 @@
 @import "mixins";
 
-.explore__container {
-    background-image: url(/assets/img/maxresdefault.jpg);
-    background-size: cover;
-    background-position:center;
-    
-    @include md-min {
-        height: 85vh;
+.explore {
+    &__container {
+        background-image: url(/assets/img/maxresdefault.jpg);
+        background-size: cover;
+        background-position:center;
+        
+        @include md-min {
+            height: 85vh;
+        }
+        @include md {
+            height: 300px;
+        }
     }
-    @include md {
-        height: 300px;
+
+    &-subtitle {
+        color: $color-white;
     }
-}
 
-.explore-subtitle {
-    color: $color-white;
-}
-
-.explore-description {
-    display: block;
-    justify-content: center;
+    &-description {
+        display: block;
+        justify-content: center;
+    }
 }
 
 .trademark {

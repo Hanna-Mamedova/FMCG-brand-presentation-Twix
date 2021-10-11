@@ -1,98 +1,97 @@
 .footer {
     background-color: $color-accent;
-}
 
-.footer-content {
-    padding-top: $gap;
-
-    @extend %container;
+    &-content {
+        padding-top: $gap;
     
-    &__title {
-        margin-bottom: -$gap*0.3;
-        color: $color-white;
-        font-weight: bold;
-    }
-
-    &__icons {
-        position: relative;
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    
-        a {
-            display: block;
-            padding: 10px;
-            transition: color 0.5s;
-            color: $color-white;
-    
-            &:hover {
-                color: $color-primary;
-            }
-        }
-    
-        i {
-            font-size: 2.25em;
-        }
-    }
-
-    &__text {
-        p {
-            color: $color-white;
-        }
-        margin-bottom: $gap;
-    }
-
-    &::after {
-        width: 80%;
-        height: 1px;
-        content: "";
-        background-color: $color-white;
-        margin-left: 10%;
-    }
-}
-
-.footer-links {
-
-    &__item {
-
-        text-align: left;
-
-        @include lg-min {
-            margin-right: 5*$gap;
-        }        
-
-        @include lg-md {
-            font-size: 0.9rem;
-            margin-right: $gap;
-        }
-
-        @include md-sm {
-            font-size: 0.7rem;
-        }
-
-        @include sm {
-            display: inline;
-            font-size: 0.7rem;
-        }
+        @extend %container;
         
-        li {
-            list-style-type: none;
-        }
-
-        a {
+        &__title {
+            margin-bottom: -$gap*0.3;
             color: $color-white;
             font-weight: bold;
         }
-    }
-}
-
-
-.footer-title {
-    color: $color-white;
-    margin-bottom: 0;
-    padding: $gap;
     
-    @include md-min {
-        font-size: 2.5em;
+        &__icons {
+            position: relative;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+        
+            a {
+                display: block;
+                padding: 10px;
+                transition: color 0.5s;
+                color: $color-white;
+        
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        
+            i {
+                font-size: 2.25em;
+            }
+        }
+    
+        &__text {
+            p {
+                color: $color-white;
+            }
+            margin-bottom: $gap;
+        }
+    
+        &::after {
+            width: 80%;
+            height: 1px;
+            content: "";
+            background-color: $color-white;
+            margin-left: 10%;
+        }
+    }
+
+    &-links {
+
+        &__item {
+    
+            text-align: left;
+    
+            @include lg-min {
+                margin-right: 5*$gap;
+            }        
+    
+            @include lg-md {
+                font-size: 0.9rem;
+                margin-right: $gap;
+            }
+    
+            @include md-sm {
+                font-size: 0.7rem;
+            }
+    
+            @include sm {
+                display: inline;
+                font-size: 0.7rem;
+            }
+            
+            li {
+                list-style-type: none;
+            }
+    
+            a {
+                color: $color-white;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &-title {
+        color: $color-white;
+        margin-bottom: 0;
+        padding: $gap;
+        
+        @include md-min {
+            font-size: 2.5em;
+        }
     }
 }

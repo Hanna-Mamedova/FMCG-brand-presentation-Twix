@@ -3,34 +3,34 @@
     background-image: url(assets/img/396000082_Twix_Header_ExploreTwix\ v2.jpg);
     background-size: cover;
     padding-bottom: $gap*2;
-}
 
-.voting-content {
-    &__subtitle,
-    &__title,
-    &__text {
-        color: $color-white;
-    }
-}
-
-.voiting-progress {
-    width: 40%;
-    margin-top: 2*$gap;
-
-    p {
-        color: $color-white;
-    }
-
-    &__scale {
-        padding: 0;
-
-        @include sm {
-            margin-bottom: $gap;
+    &-content {
+        &__subtitle,
+        &__title,
+        &__text {
+            color: $color-white;
         }
     }
-}
 
-.voiting-ending {
-    margin-top: $gap;
-    color: $color-white;
+    &-progress {
+        width: 40%;
+        margin-top: 2*$gap;
+    
+        p {
+            color: $color-white;
+        }
+    
+        &__scale {
+            padding: 0;
+    
+            @include sm {
+                margin-bottom: $gap;
+            }
+        }
+    }
+
+    &-ending {
+        margin-top: $gap;
+        color: $color-white;
+    }
 }

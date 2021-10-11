@@ -6,26 +6,6 @@
     background-color: $color-primary;
     background-image: url(/assets/img/abstract-yellow-gradient-background-vector.jpg);
     background-size: cover;
-
-    align-content: center;
-
-    &-menu {
-        @extend %container;
-    }
-
-    &-logo {
-        margin-right: 2*$gap;
-    
-        &__img {
-            @include lg-md {
-                width: 70%;
-            }
-    
-            @include md {
-                width: 50%;
-            }
-        }
-    }
 }
 
 .nav-item {

@@ -1,38 +1,37 @@
-.product-container {
-    background-color: $color-light;
-    padding-bottom: 2*$gap;
-}
+.product {
 
-.product-title {
-    padding-top: $gap;
-}
+    &-container {
+        background-color: $color-light;
+        padding-bottom: 2*$gap;
+    }
 
-.product-description__container {
-    padding-top: $gap;
-    @extend %container;
-}
+    &-title {
+        padding-top: $gap;
+    }
 
-.product-left,
-.product-right {
-    background-color: transparent;
-    border: none;
-    color: $color-brown;
-    margin: 0;
-
-    &__img {
-        max-width: 500px;
-        max-height: 300px;
-
-        &:hover {
-            transition: transform .5s;
-            transform: scale(1.05);
+    &-description {
+        &__container {
+            padding-top: $gap;
+            @extend %container;
         }
     }
+
+    &-left,
+    &-right {
+        background-color: transparent;
+        border: none;
+        color: $color-brown;
+        margin: 0;
+    
+        &__img {
+            max-width: 500px;
+            max-height: 300px;
+    
+            &:hover {
+                transition: transform .5s;
+                transform: scale(1.05);
+            }
+        }
+    }
+
 }
-
-
-
-
-
-
-
