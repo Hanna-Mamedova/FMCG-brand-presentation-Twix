@@ -1,10 +1,16 @@
 @import "mixins";
 
 .explore__container {
-    height: 85vh;
     background-image: url(/assets/img/maxresdefault.jpg);
     background-size: cover;
     background-position:center;
+    
+    @include md-min {
+        height: 85vh;
+    }
+    @include md {
+        height: 300px;
+    }
 }
 
 .explore-subtitle {

@@ -1,10 +1,11 @@
 .footer {
     background-color: $color-accent;
-    width: 100%;
 }
 
 .footer-content {
     padding-top: $gap;
+
+    @extend %container;
     
     &__title {
         margin-bottom: -$gap*0.3;
@@ -55,19 +56,22 @@
     &__item {
 
         text-align: left;
-        margin-right: 5*$gap;
+
+        @include lg-min {
+            margin-right: 5*$gap;
+        }        
 
         @include lg-md {
             font-size: 0.9rem;
-            margin-right: 4*$gap;
+            margin-right: $gap;
         }
 
         @include md-sm {
             font-size: 0.7rem;
-            margin-right: 3*$gap;
         }
 
         @include sm {
+            display: inline;
             font-size: 0.7rem;
         }
         
@@ -84,8 +88,11 @@
 
 
 .footer-title {
-    font-size: 2.5em;
     color: $color-white;
     margin-bottom: 0;
     padding: $gap;
+    
+    @include md-min {
+        font-size: 2.5em;
+    }
 }
