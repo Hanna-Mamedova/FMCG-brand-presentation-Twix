@@ -178,7 +178,7 @@ h5 {
 .story-title__img {
   background-image: url(/assets/img/Birth_of_a_phenomenon_16x9.jpg);
   background-size: cover;
-  height: 200px;
+  min-height: 300px;
 }
 .story-info {
   margin-bottom: 40px;
